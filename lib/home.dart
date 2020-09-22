@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:http_parser/http_parser.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:imagetotext/generatecaptions.dart';
 import 'package:mime/mime.dart';
 import 'package:http/http.dart' as http;
 
@@ -189,7 +190,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                           ),
                                           SizedBox(height: 5),
                                           GestureDetector(
-                                            onTap: () {},
+                                            onTap: () {
+                                              Navigator.push(context, MaterialPageRoute(builder: (context) => GenerateCaptions()));
+                                            },
                                             child: Container(
                                               padding: EdgeInsets.symmetric(
                                                 horizontal: 20,
