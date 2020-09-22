@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:imagetotext/home.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 class MySplash extends StatefulWidget {
@@ -11,7 +12,7 @@ class _MySplashState extends State<MySplash> {
   Widget build(BuildContext context) {
     return SplashScreen(
       seconds: 2,
-      navigateAfterSeconds: null,
+      navigateAfterSeconds: HomeScreen(),
       title: Text(
         'Image to Text',
         style: TextStyle(
