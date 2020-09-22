@@ -17,7 +17,10 @@ class _MySplashState extends State<MySplash> {
         style: TextStyle(
             color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24),
       ),
+      image: Image.asset('assets/bgimg.png'),
       backgroundColor: Colors.black,
+      loaderColor: Colors.lightBlue[700],
+      photoSize: 50,
     );
   }
 }
