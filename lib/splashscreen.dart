@@ -15,12 +15,16 @@ class _MySplashState extends State<MySplash> {
       title: Text(
         'Image to Text',
         style: TextStyle(
-            color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24),
+            color: Colors.white, fontWeight: FontWeight.bold, fontSize: 30),
       ),
       image: Image.asset('assets/bgimg.png'),
       backgroundColor: Colors.black,
       loaderColor: Colors.lightBlue[700],
-      photoSize: 50,
+      loadingText: Text(
+        'Loading...',
+        style: TextStyle(color: Colors.white),
+      ),
+      photoSize: 100,
     );
   }
 }
